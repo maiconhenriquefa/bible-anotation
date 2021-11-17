@@ -5,36 +5,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Bíblia</title>
 </head>
 
 <body>
-  <div class="container">
+  <div id="container">
     <header></header>
     <section id="bible">
+      <h1>Bíblia</h1>
       <div id="resultVers"></div>
       <div id="selectotes">
-        <form id="buscaTexto">
+        <form id="searchText">
           <label for="book">Livro</label>
           <input id="book" type="text">
-          <label for="cap">Capítulo</label>
+          <label for="cap">Cap</label>
           <input id="cap" type="number">
-          <label for="vers">Versículo</label>
+          <label for="vers">Vers</label>
           <input id="vers" type="number">
           <input id="btnSearch" type="button" value="Pesquisar">
         </form>
       </div>
     </section>
     <section id="notes">
-      <div id="anotation"></div>
+      <h1>Notas</h1>
+      <input type="text" id="anotation">
       <div id="selectotes">
-        <form id="buscaTexto">
-          <label for="book">Negrito</label>
-          <input id="book" type="text">
-          <label for="cap">Itálico</label>
-          <input id="cap" type="number">
-          <label for="vers">Marcador</label>
-          <input id="vers" type="number">
+        <form id="editText">
+          <label for="strong"><strong>Negrito</strong></label>
+          <input id="strong" type="checkbox">
+          <label for="italic"><i>Itálico</i></label>
+          <input id="italic" type="checkbox">
+          <label for="marcador">Marcador</label>
+          <input id="marcador" type="checkbox">
           <input id="btnSearch" type="button" value="Salvar">
         </form>
       </div>

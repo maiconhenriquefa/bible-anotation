@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  /* colors */
+  --white-color: #d9e4ec;
+  --champagne-color: #b7cfdc;
+  --serenity-color: #6aabd2;
+  --crimson-color: #385e72;
+  /* fonts-size */
+  --text-size-big: 1.953rem;
+  --text-size-medium: 1.563rem;
+  --text-size-litle: 1.25rem;
+}
+
+#container {
+  width: 650px;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#bible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+}
+
+#resultVers {
+  width: 90%;
+  height: 90%;
+
+  box-sizing: border-box;
+  padding: 10px;
+  padding-top: 50px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  background: var(--champagne-color);
+  color: var(--crimson-color);
+
+  font-size: var(--text-size-medium);
+  font-weight: 700;
+}
+
+#selectotes {
+  width: 90%;
+  height: 10%;
+
+  display: flex;
+  align-items: center;
+
+  border: var(--crimson-color) solid 2px;
+  box-shadow: 5px 5px var(--serenity-color);
+}
+
+form {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+label {
+  font-size: var(--text-size-litle);
+  margin-right: 5px;
+  color: var(--crimson-color);
+  display: flex;
+}
+
+input {
+  font-size: var(--text-size-litle);
+  width: 50px;
+  margin-right: 20px;
+  border: none;
+  color: var(--white-color);
+  background: #6aabd2;
+  padding: 5px;
+}
+
+#book {
+  width: 100px;
+  text-align: center;
+}
+
+input[type='button'] {
+  width: 120px;
+  border: none;
+  height: 40px;
+  background-color: var(--crimson-color);
+  color: var(--white-color);
+  font-size: var(--text-size-litle);
+  cursor: pointer;
+}
+
+#notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+}
+
+#anotation {
+  width: 90%;
+  height: 50%;
+
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-right: 0;
+
+  background: var(--champagne-color);
+  color: var(--crimson-color);
+
+  font-size: var(--text-size-medium);
+  font-weight: 400;
+}
+
+#selectotes {
+  width: 90%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  border: var(--crimson-color) solid 2px;
+  box-shadow: 5px 5px var(--serenity-color);
+}
+
+#editText input :not([value='Salvar']) {
+  width: 50px;
+}
+
+#editText {
+  justify-content: center;
+}
+
+label[for^='mar'] {
+  background: var(--champagne-color);
+}
+
+h1 {
+  width: 150px;
+  text-align: center;
+  border: var(--crimson-color) solid 2px;
+  box-shadow: 5px 5px var(--serenity-color);
+}
