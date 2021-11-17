@@ -11,10 +11,10 @@ body {
 
 :root {
   /* colors */
-  --white-color: #b7cfdc;
-  --champagne-color: #d9e4ec;
-  --serenity-color: #6aabd2;
-  --crimson-color: #385e72;
+  --white-color: #d6d6d6;
+  --champagne-color: #bdbdbd;
+  --serenity-color: #d17a76;
+  --crimson-color: #c35651;
   /* fonts-size */
   --text-size-big: 1.953rem;
   --text-size-medium: 1.563rem;
@@ -23,7 +23,7 @@ body {
 
 #two-section {
   width: 100%;
-  background: #385e72;
+  background: var(--crimson-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,7 +100,7 @@ input {
   margin-right: 10px;
   border: none;
   color: var(--white-color);
-  background: #6aabd2;
+  background: var(--serenity-color);
   padding: 5px;
 }
 
@@ -141,7 +141,7 @@ input[type='button'] {
   margin-right: 0;
 
   background: var(--champagne-color);
-  color: black;
+  color: var(--crimson-color);
 
   font-size: var(--text-size-medium);
   font-weight: 400;
@@ -173,6 +173,7 @@ h1 {
   border: var(--crimson-color) solid 2px;
   box-shadow: 5px 5px var(--serenity-color);
   background: var(--champagne-color);
+  color: var(--white-color);
 }
 
 #two-section h1 {
@@ -188,5 +189,4 @@ h1 {
 
 p {
   line-height: 25px;
-  color: var(--white-color);
 }
