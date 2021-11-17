@@ -61,10 +61,11 @@ section {
 
 #selectotes {
   width: 90%;
-  height: 10%;
+  height: 50px;
 
   display: flex;
   align-items: center;
+  padding: 0 10px;
 
   border: var(--crimson-color) solid 2px;
   box-shadow: 5px 5px var(--serenity-color);
@@ -88,13 +89,17 @@ label {
 input {
   font-size: var(--text-size-litle);
   width: 50px;
-  margin-right: 20px;
+  margin-right: 10px;
   border: none;
   color: var(--white-color);
   background: #6aabd2;
   padding: 5px;
 }
 
+input:focus {
+  border: none;
+  outline: 0;
+}
 #book {
   width: 100px;
   text-align: center;
@@ -128,21 +133,10 @@ input[type='button'] {
   margin-right: 0;
 
   background: var(--champagne-color);
-  color: var(--crimson-color);
+  color: black;
 
   font-size: var(--text-size-medium);
   font-weight: 400;
-}
-
-#selectotes {
-  width: 90%;
-  height: 50px;
-
-  display: flex;
-  align-items: center;
-
-  border: var(--crimson-color) solid 2px;
-  box-shadow: 5px 5px var(--serenity-color);
 }
 
 #editText input :not([value='Salvar']) {
@@ -157,8 +151,16 @@ label[for^='mar'] {
   background: var(--champagne-color);
 }
 
+#fundamentation-anotation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
-  width: 150px;
+  align-self: flex-start;
+  text-transform: uppercase;
+  padding: 10px;
   text-align: center;
   border: var(--crimson-color) solid 2px;
   box-shadow: 5px 5px var(--serenity-color);
